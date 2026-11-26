@@ -11,3 +11,39 @@
     display: block;
     overflow: hidden;
 }
+/* Developer profile image */
+.profile-card .avatar {
+    width: 88px !important;
+    height: 88px !important;
+    min-width: 88px;
+    margin: 24px auto 12px;
+    padding: 0;
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    background: transparent;
+    flex-shrink: 0;
+}
+
+.profile-card .avatar .avatar-photo {
+    position: absolute;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #69e2e8;
+}
+
+.profile-card .avatar .avatar-glow {
+    position: absolute;
+    inset: -7px;
+    border: 1px solid #7ddfe65c;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 2;
+}
