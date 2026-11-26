@@ -47,3 +47,38 @@
     pointer-events: none;
     z-index: 2;
 }
+/* Full website scenic background */
+html {
+    background: #101827;
+}
+
+body {
+    background:
+        linear-gradient(
+            rgba(5, 10, 22, 0.68),
+            rgba(5, 10, 22, 0.78)
+        ),
+        url("../Images/portfolio-background.png");
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Keep content readable */
+.profile-card,
+.skill-card,
+.project-card,
+.contact-panel {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Mobile background support */
+@media (max-width: 760px) {
+    body {
+        background-attachment: scroll;
+        background-position: center top;
+    }
+}
